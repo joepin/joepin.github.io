@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.circle-container {
+    position: relative;
+    width: 48em;
+    height: 48em;
+    padding: 5.6em;
+    border: dashed 1px;
+    border-radius: 50%;
+    margin: 3.5em auto 0;
+}
+.card {
+    display: block;
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 8em; height: 8em;
+    margin: -4em;
+}
+.circle-container img {
+  display: block;
+  width: 100%;
+}
+
+.showcase {
+  display: block;
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 24em; height: 24em;
+  margin: -12em;
+}
+
+.deg0 {
+  transform: translate(24em);
+}
+.deg15 {
+  transform: rotate(15deg) translate(24em) rotate(-15deg);
+}
+.deg30 {
+  transform: rotate(30deg) translate(24em) rotate(-30deg);
+}
+.deg45 {
+  transform: rotate(45deg) translate(24em) rotate(-45deg);
+}
+.deg60 {
+  transform: rotate(60deg) translate(24em) rotate(-60deg);
+}
+.deg75 {
+  transform: rotate(75deg) translate(24em) rotate(-75deg);
+}
+.deg90 {
+  transform: rotate(90deg) translate(24em) rotate(-90deg);
+}
+.deg105 {
+  transform: rotate(105deg) translate(24em) rotate(-105deg);
+}
+.deg120 {
+  transform: rotate(120deg) translate(24em) rotate(-120deg);
+}
+.deg135 {
+  transform: rotate(135deg) translate(24em) rotate(-135deg);
+}
+.deg150 {
+  transform: rotate(150deg) translate(24em) rotate(-150deg);
+}
+.deg165 {
+  transform: rotate(165deg) translate(24em) rotate(-165deg);
+}
+.deg180 {
+  transform: translate(-24em);
+}
+.deg195 {
+  transform: rotate(195deg) translate(24em) rotate(-195deg);
+}
+.deg210 {
+  transform: rotate(210deg) translate(24em) rotate(-210deg);
+}
+.deg225 {
+  transform: rotate(225deg) translate(24em) rotate(-225deg);
+}
+.deg240 {
+  transform: rotate(240deg) translate(24em) rotate(-240deg);
+}
+.deg255 {
+  transform: rotate(255deg) translate(24em) rotate(-255deg);
+}
+.deg270 {
+  transform: rotate(270deg) translate(24em) rotate(-270deg);
+}
+.deg285 {
+  transform: rotate(285deg) translate(24em) rotate(-285deg);
+}
+.deg300 {
+  transform: rotate(300deg) translate(24em) rotate(-300deg);
+}
+.deg315 {
+  transform: rotate(315deg) translate(24em) rotate(-315deg);
+}
+.deg330 {
+  transform: rotate(330deg) translate(24em) rotate(-330deg);
+}
+.deg345 {
+  transform: rotate(345deg) translate(24em) rotate(-345deg);
+}
+.deg360 {
+  transform: translate(24em);
+}
