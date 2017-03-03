@@ -1,22 +1,114 @@
-body {
+* {
   margin: 0;
   padding: 0;
 }
 
-.body-container {
-  height: 96vh;
+.full {
+  height: 100vh;
   width: 100vw;
 }
 
-#body-card {
-  margin-top: 2vh;
-  margin-bottom: 2vh;
-}
-
 .full-height {
-  height: 100%;
+  height: 100vh;
 }
 
 .full-width {
+  width: 100vw;
+}
+
+.responsive-image {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.floating {
+  display: fixed;
+}
+
+.display {
+  display: flex;
+  align-items: center;
+  margin: 0 5vw;
+  height: 100%;
+}
+
+.splash {
+  font-family: 'Kalam', cursive;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.splash p {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.splash .title {
+  font-size: 8em;
+  transform-origin: 0 top;
+  animation-name: swing1, swing2, swing3, swing4;
+  animation-duration: 1s;
+  animation-timing-function: linear, ease, linear, ease;
+  animation-delay: 0s, 1s, 2s, 3s;
+}
+
+@keyframes swing1 {
+  from {
+    transform: rotateZ(-90deg);
+  }
+  to {
+    transform: rotateZ(45deg);
+  }
+}
+
+@keyframes swing2 {
+  from {
+    transform: rotateZ(45deg);
+  }
+  to {
+    transform: rotateZ(-22.5deg);
+  }
+}
+
+@keyframes swing3 {
+  from {
+    transform: rotateZ(-22.5deg);
+  }
+  to {
+    transform: rotateZ(11deg);
+  }
+}
+
+@keyframes swing4 {
+  from {
+    transform: rotateZ(11deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+
+
+.splash .tagline {
+  font-size: 2em;
+  font-weight: 300;
+  text-align: center;
+}
+
+.splash .spacer {
+  height: 15%;
   width: 100%;
+}
+
+.display .image {
+  display: inline-block;
+  width: 40%;
+}
+
+.display .description {
+  display: inline-block;
+  width: 60%;
 }
