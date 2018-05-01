@@ -34,11 +34,12 @@ body {
   margin-right: 3vw;
 }
 
-.row {
-  background-color: #eee;
-}
-
 .col {
   height: 200px;
+}
+
+.col .inner {
   background-color: #ddd;
+  height: 100%;
+  width: 100%;
 }
