@@ -70,7 +70,7 @@ body {
 .outer::before {
   content: '';
   display: block;
-  padding-top: 100%;
+  padding-top: calc(0.625 * 100%);
 }
 
 .inner {
@@ -85,9 +85,6 @@ body {
 }
 
 .work-image {
-  object-fit: cover;
-  min-width: 100%;
-  min-height: 100%;
   height: auto;
   width: 100%;
 }
@@ -112,3 +109,4 @@ body {
 .outer:hover .work-text {
   display: unset;
 }
+
