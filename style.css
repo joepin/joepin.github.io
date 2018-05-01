@@ -32,20 +32,15 @@ body {
 
 .logo-link, .logo-link:visited, .logo-link:hover {
   text-decoration: none;
-  color: black;
+  color: #222;
 }
 
 .logo-link:hover {
-  text-shadow: 0 0 20px #888;
+  color: #444;
 }
 
 .navigation-link:not(:last-child) {
   margin-right: 3vw;
-}
-
-.item {
-  height: auto;
-  width: 100%;
 }
 
 .all-rows {
@@ -59,6 +54,7 @@ body {
   margin: 5px 0;
   box-sizing: border-box;
   background-color: #888;
+  transition: background-color 0.4s ease-out;
 }
 
 .outer:nth-child(odd) {
@@ -83,10 +79,36 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.inner img {
+.work-image {
   object-fit: cover;
   min-width: 100%;
-  min-height: 100%
+  min-height: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.work-text {
+  text-align: center;
+  display: none;
+}
+
+.work-text h5 {
+  font-size: 2rem;
+}
+
+.outer:hover {
+  background-color: #fff;
+}
+
+.outer:hover .work-image {
+  display: none;
+}
+
+.outer:hover .work-text {
+  display: unset;
 }
