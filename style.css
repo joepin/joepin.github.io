@@ -7,6 +7,7 @@ body {
   padding: 0 8vw;
   font-family: 'Montserrat', sans-serif;
   height: 100vh;
+  background-color: #efefef;
 }
 
 .header {
@@ -53,7 +54,7 @@ body {
   flex-basis: calc(50% - 10px);
   margin: 5px 0;
   box-sizing: border-box;
-  background-color: #888;
+  background-color: #aaa;
   transition: background-color 0.4s ease-out;
 }
 
@@ -99,7 +100,7 @@ body {
 }
 
 .outer:hover {
-  background-color: #fff;
+  background-color: unset;
 }
 
 .outer:hover .work-image {
