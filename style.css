@@ -3,141 +3,42 @@
   padding: 0;
 }
 
-.full {
-  height: 100vh;
-  width: 100vw;
-}
-
-.full-height {
+body {
+  padding: 0 8vw;
+  font-family: 'Montserrat', sans-serif;
   height: 100vh;
 }
 
-.full-width {
-  width: 100vw;
+.header {
+  padding: 5% 0;
 }
 
-.responsive-image {
-  max-height: 100%;
-  max-width: 100%;
-}
-
-.floating {
-  display: fixed;
-}
-
-.display {
+.navigation {
+  padding: 0;
+  list-style: none;
   display: flex;
   align-items: center;
-  margin: 0 5vw;
-  height: 100%;
+  height: 10vh;
+  min-height: 60px;
+  font-size: 1rem;
 }
 
-.splash {
-  font-family: 'Kalam', cursive;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
+.logo {
+  margin-right: auto;
+  font-weight: 600;
+  font-size: 3rem;
+  text-transform: uppercase;
 }
 
-.splash p {
-  display: block;
-  padding: 0;
-  margin: 0;
+.navigation-link:not(:last-child) {
+  margin-right: 3vw;
 }
 
-.splash .title {
-  font-size: 8em;
-  transform-origin: 0 top;
-  animation-name: swing;
-  animation-duration: 5s;
-  animation-timing-function: linear;
+.row {
+  background-color: #eee;
 }
 
-@keyframes swing {
-  0% {
-    transform: rotateZ(-90deg);
-  }
-  10% {
-    transform: rotateZ(45deg);
-  }
-  35% {
-    transform: rotateZ(-22.5deg);
-  }
-  45% {
-    transform: rotateZ(11deg);
-  }
-  100% {
-    transform: rotateZ(0deg);
-  }
-}
-
-.splash .tagline {
-  font-size: 2em;
-  font-weight: 300;
-  text-align: center;
-  animation-name: fadein;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-}
-
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.splash .spacer {
-  height: 15%;
-  width: 100%;
-}
-
-.display {
-  font-family: 'Kalam', cursive;
-}
-
-.display .image {
-  display: inline-block;
-  width: 40%;
-}
-
-.display .divider {
-  display: inline-block;
-  width: 5%;
-}
-
-.display .info {
-  display: inline-block;
-  width: 55%;
-  font-weight: 300;
-}
-
-.display .info .title {
-  text-align: center;
-}
-
-.display-image-links {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.display-image-links .button {
-  padding: 2%;
-  background-color: #eeeeee;
-  text-decoration: none;
-  color: #222222;
-  width: 30%;
-  text-align: center;
-}
-
-.display-image-links .button:hover {
-  background-color: #888888;
-  color: #eeeeee;
+.col {
+  height: 200px;
+  background-color: #ddd;
 }
