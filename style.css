@@ -7,7 +7,7 @@ body {
   padding: 0 8vw;
   font-family: 'Montserrat', sans-serif;
   height: 100vh;
-  background-color: #efefef;
+  background-color: #f6f6f6;
 }
 
 .header {
@@ -40,6 +40,14 @@ body {
   color: #444;
 }
 
+.navigation-link {
+  color: #999;
+}
+
+.navigation-link.active {
+  color: #111;
+}
+
 .navigation-link:not(:last-child) {
   margin-right: 3vw;
 }
@@ -52,7 +60,7 @@ body {
 .outer {
   position: relative;
   flex-basis: calc(50% - 10px);
-  margin: 5px 0;
+  margin: 2vh 0;
   box-sizing: border-box;
   background-color: #aaa;
   transition: background-color 0.4s ease-out;
